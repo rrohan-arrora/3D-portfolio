@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { logo, menu, close } from '../assets';
+import { close, logo, menu } from '../assets';
 import { navLinks } from "../constants";
 import { styles } from '../styles';
 
@@ -21,7 +21,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}>
               <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-              <p className="text-white text-[18px] font-bold cursor-pointer">Rohan Arora</p>
+              <p className="flex text-white text-[18px] font-bold cursor-pointer">Rohan Arora</p>
           </Link>
           <ul className="list-none hidden sm:flex flex-row gap-10">
             {navLinks.map((link) => (
@@ -34,6 +34,8 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          {/* mobile view */}
           <div className='sm:hidden flex flex-1 justify-end items-center'>
             <img
               src={toggle ? close : menu}
