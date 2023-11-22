@@ -3,9 +3,9 @@ import React from 'react';
 import { Tilt } from "react-tilt";
 
 import { services } from "../constants";
+import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
-import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({index, title, icon}) => {
   return(
@@ -46,13 +46,12 @@ const About = () => {
       </motion.div>
       <motion.p 
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
       >
-        My background as a software developer, combined with the diverse range of projects I have successfully delivered during my Masters, has equipped me with a profound understanding of software development and the entire software development life cycle (SDLC).
+        My background as a software developer, combined with the diverse range of projects I have successfully delivered during my Masters, has equipped me with a profound understanding of software development and the entire software development life cycle (SDLC).<br />
         I am driven to bridge the gap between technical excellence and the creation of exceptional products that resonate with users.
         
         I am confident that my skills and passion for technologies would make a valuable contribution to any team and help drive your products to new heights. <br />
-        I am eagerly looking forward to the opportunity as <span className='text-white'>TECHNICAL PRODUCT MANAGER || SOFTWARE DEVELOPER.</span>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
