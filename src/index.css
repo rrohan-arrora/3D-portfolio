@@ -19,6 +19,10 @@
   display: block;
 }
 
+.h-screen-62vh {
+  height: 100vh;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
