@@ -23,6 +23,10 @@
   height: 100vh;
 }
 
+.w-11{
+  width: 4rem;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
