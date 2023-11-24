@@ -1,29 +1,28 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    docker,
-    redux,
-    jenkins,
-    java,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-  } from "../assets";
+  backend,
+  carrent,
+  creator,
+  css,
+  docker,
+  git,
+  html,
+  java,
+  javascript,
+  jenkins,
+  jobit,
+  mobile,
+  mongodb,
+  nodejs,
+  reactjs,
+  redux,
+  shopify,
+  starbucks,
+  tailwind,
+  tesla,
+  tripguide,
+  typescript,
+  web
+} from "../assets";
   
   export const navLinks = [
     {
@@ -61,6 +60,22 @@ import {
   
   const technologies = [
     {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "Next JS",
+      icon: html,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "MySql",
+      icon: tailwind,
+    },
+    {
       name: "Java",
       icon: java,
     },
@@ -79,22 +94,6 @@ import {
     {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "Next JS",
-      icon: html,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "MySql",
-      icon: tailwind,
     },
     {
       name: "git",
@@ -237,4 +236,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, projects };
+  export { experiences, projects, services, technologies };
