@@ -16,6 +16,7 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  debugger
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -34,16 +35,20 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
+          {
+              index==2 ? <></> :
+              <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+              src={github}
+              alt='source code'
+              className='w-1/2 h-1/2 object-contain'
+            />
             </div>
+          }
+              
           </div>
         </div>
 
@@ -84,7 +89,10 @@ const Works = () => {
           real-world examples of my work. Each project is briefly described with
           links to code repositories. It reflects my
           ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          and manage projects effectively. 
+
+          <br />
+          Other projects you can find <a target="_blank" className="text-white text-3xl" href="https://github.com/rrohan-arrora">here.</a>
         </motion.p>
       </div>
 
