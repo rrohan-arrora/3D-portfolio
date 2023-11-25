@@ -115,16 +115,14 @@ import {
   
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company_name: "Ksolves",
-      icon: starbucks,
+      title: "Software Engineer Intern",
+      company_name: "Qualcomm",
+      icon: shopify,
       iconBg: "#383E56",
-      date: "Aug 2018 - Dec 2020",
+      date: "May 2023 - Jul 2023",
       points: [
-        "Developing and maintaining web applications using Ruby on Rails, React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "contributions to QUALCOMM Telematics SDK to facilitate off-target SDK application development",
+        "Developed the simulation libraries for various verticles and validated end to end",
       ],
     },
     {
@@ -142,14 +140,16 @@ import {
       ],
     },
     {
-      title: "Software Engineer Intern",
-      company_name: "Qualcomm",
-      icon: shopify,
+      title: "Full Stack Developer",
+      company_name: "Ksolves",
+      icon: starbucks,
       iconBg: "#383E56",
-      date: "May 2023 - Jul 2023",
+      date: "Aug 2018 - Dec 2020",
       points: [
-        "contributions to QUALCOMM Telematics SDK to facilitate off-target SDK application development",
-        "Developed the simulation libraries for various verticles and validated end to end",
+        "Developing and maintaining web applications using Ruby on Rails, React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
   ];
