@@ -16,7 +16,6 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
-  debugger
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
