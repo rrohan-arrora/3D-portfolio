@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from '../styles';
 
-import { SectionWrapper } from '../hoc';
-import { slideIn } from "../utils/motion";
 
 
 const Hero = () => {
@@ -26,30 +24,39 @@ const Hero = () => {
     </div>
   </div>
 
-  <div className='flex p-4 rounded-2xl'>
-    <motion.div
-      variants={slideIn('left', 'tween', 0.1, 1)}
-    >
-      <p className={"sm:text-[18px] text-[14px] text-secondary tracking-wider text-white"}>
-        <br/>My background as a software developer, combined with the diverse range of projects 
-        I have successfully delivered during my Masters from IIIT BANGALORE, has equipped me with 
-        a profound understanding of entire software development life cycle (SDLC).
-      </p>
-    </motion.div>
-  </div>
-
-  <div className='flex p-4 rounded-2xl mt-5'>
-    <motion.div
-      variants={slideIn('right', 'tween', 0.1, 1)}
-    >
-      <p className="sm:text-[18px] text-[14px] text-secondary tracking-wider text-white">
-        I am confident that my skills and passion for technologies would make a valuable contribution to any team and help drive your products to new heights.
-      </p>
-    </motion.div>
+  <div className='absolute bottom-40 xs:bottom-40 w-full flex justify-center items-center'>
+    <a href='#about'>
+      <div className='w-[100px] h-[64px] flex justify-center items-start p-2'>
+      <motion.div
+          animate={{
+            y: [0, 40, 0],
+          }}
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className='w-11'
+        >
+          {/* SVG Arrow Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="white"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </motion.div>
+      </div>
+    </a>
   </div>
 </section>
 
   )
 }
 
-export default SectionWrapper(Hero, "")
+export default Hero
