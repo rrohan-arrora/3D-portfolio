@@ -45,16 +45,16 @@ import {
       icon: web,
     },
     {
+      title: "DevOps Enthusiast",
+      icon: creator,
+    },
+    {
       title: "Frontend Developer",
       icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
-    },
-    {
-      title: "DevOps Engineer",
-      icon: creator,
     },
   ];
   
